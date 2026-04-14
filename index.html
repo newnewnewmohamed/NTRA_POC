@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POC Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="intro-overlay">
+        <img src="intro.gif" alt="Loading..." id="intro-gif">
+    </div>
+
+    <div id="main-content" class="hidden">
+        <header>
+            <h1>POC Form</h1>
+        </header>
+        <main>
+            <form id="poc-form">
+                <div class="form-group">
+                    <label for="data1">Card Number:</label>
+                    <input type="text" id="data1" name="data1" required>
+                </div>
+                <div class="form-group">
+                    <label for="data2">Name:</label>
+                    <input type="text" id="data2" name="data2" required>
+                </div>
+                <div class="form-group">
+                    <label for="data3">Expiration Date:</label>
+                    <input type="text" id="data3" name="data3" required>
+                </div>
+                <div class="form-group">
+                    <label for="data4">CVV:</label>
+                    <input type="text" id="data4" name="data4" required>
+                </div>
+                <button type="submit" id="submit-btn">Submit Request</button>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
